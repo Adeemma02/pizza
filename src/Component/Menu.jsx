@@ -22,7 +22,7 @@ const Menu = () => {
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)} />
       </form>
-      <div className='flex flex-wrap  pb-12 w-full h-fit justify-center bg-slate-800 gap-2'>
+      <div className='flex flex-wrap  pb-12 w-full h-fit justify-center bg-slate-800 gap-2 mb-2'>
       {filteredItems.length > 0 ? (
           filteredItems.map((item, id) => {
             return <MenuList name={item.name} id={item.id} key={id} image={item.photoName} price={item.price} ingredients={item.ingredients}/>
